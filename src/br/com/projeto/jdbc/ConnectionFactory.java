@@ -10,7 +10,8 @@ public class ConnectionFactory {
         
         try {
             return DriverManager.getConnection("jdbc:mysql://127.0.0.1/bdvendas","usuario","123");
-        } catch (Exception erro) {
+        } 
+        catch (Exception erro) {
             throw new RuntimeException(erro);
         }
         

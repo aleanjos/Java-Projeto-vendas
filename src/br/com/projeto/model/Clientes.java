@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package br.com.projeto.model;
 
 public class Clientes {
@@ -132,7 +128,4 @@ public class Clientes {
     public void setUf(String uf) {
         this.uf = uf;
     }
-    
-    
-    
 }
