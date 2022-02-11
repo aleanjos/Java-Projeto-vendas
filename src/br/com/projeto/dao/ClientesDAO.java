@@ -19,11 +19,10 @@ public class ClientesDAO {
     public void cadastrarCliente(Clientes obj) {
         
         try {
-            //Comando sql
             String sql ="insert into tb_clientes (nome,rg,cpf,email,telefone,celular,cep,endereco,numero,complemento,bairro,cidade,estado)"
                                                + "values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
             
-            // Conectar ao banco de dados e organizar o comando sql
+            // Conectar ao banco de dados e organizar o comando sql.
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1, obj.getNome());
             stmt.setString(2, obj.getRg());
@@ -39,7 +38,7 @@ public class ClientesDAO {
             stmt.setString(12, obj.getCidade());
             stmt.setString(13, obj.getUf());
             
-            //Execultar o comando sql
+            //Execulta o comando sql e fecha a conexão com o banco de dados.
             stmt.execute();
             stmt.close();
             
@@ -51,12 +50,10 @@ public class ClientesDAO {
         
     }
     
-    // Método alterarCliente
     public void alterarCliente() {
         
     }
     
-    // Método excluirCliente
     public void excluirCliente() {
         
     }
