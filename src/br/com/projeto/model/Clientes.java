@@ -1,7 +1,7 @@
 package br.com.projeto.model;
 
 public class Clientes {
-    
+
     private int id;
     private String nome;
     private String rg;
