@@ -38,7 +38,7 @@ public class ClientesDAO {
             stmt.setString(10, obj.getComplemento());
             stmt.setString(11, obj.getBairro());
             stmt.setString(12, obj.getCidade());
-            stmt.setString(13, obj.getUf());
+            stmt.setString(13, obj.getEstado());
 
             //Execulta o comando sql e fecha a conexão com o banco de dados.
             stmt.execute();
@@ -77,7 +77,7 @@ public class ClientesDAO {
                 obj.setComplemento(rs.getString("complemento"));
                 obj.setBairro(rs.getString("bairro"));
                 obj.setCidade(rs.getString("cidade"));
-                obj.setUf(rs.getString("uf"));
+                obj.setEstado(rs.getString("estado"));
 
                 lista.add(obj);
             }
